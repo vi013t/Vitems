@@ -3,6 +3,7 @@
 		"appdata",
 		"modman",
 		"netstandard",
+		"teleporter",
 		"Vitems"
 	]
 }

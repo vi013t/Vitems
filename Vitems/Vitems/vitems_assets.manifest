@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 2023.2.9f1
-CRC: 4004526420
+CRC: 1079543935
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 36371dbc5c921a854d603cce5dc0f34e
+    Hash: df176b44f8b96e2b45f1bc48e6fcc222
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5527383dc91eba37123fc67ad6efaa19
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 09ee638c0f6452929dbbbd477b70b278
+    Hash: 9209ec92c9639d8587afcdf13d6838c9
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -18,4 +18,5 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Textures/Icons/Item/rich_gunpowder.png
+- Assets/Textures/Icons/Item/momentum.png
 Dependencies: []
