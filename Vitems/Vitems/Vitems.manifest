@@ -1,0 +1,8 @@
+ManifestFileVersion: 0
+UnityVersion: 2023.2.9f1
+CRC: 173105537
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: vitems_assets
+      Dependencies: {}
