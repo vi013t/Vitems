@@ -16,12 +16,12 @@ public abstract class ModdedEquipment : EquipmentDef
 
 	protected abstract bool ActivateEquipment(EquipmentSlot slot);
 
-	private string NameToken 
-	{ 
+	private string NameToken
+	{
 		get
 		{
 			return this.Name.Replace("'", "").Replace(" ", "_").ToUpper();
-		} 
+		}
 	}
 
 	protected ModdedEquipment()
@@ -32,7 +32,7 @@ public abstract class ModdedEquipment : EquipmentDef
 		this.pickupToken = $"{this.NameToken}_PICKUP";
 		this.descriptionToken = $"{this.NameToken}_DESCRIPTION";
 		this.loreToken = $"{this.NameToken}_LORE";
-		this.pickupIconSprite = Main.MainAssets.LoadAsset<Sprite>($"{this.NameToken.ToLower()}.png");
+		this.pickupIconSprite = VitemsAssets.Sprite($"{this.NameToken.ToLower()}.png");
 		this.pickupModelPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Mystery/PickupMystery.prefab").WaitForCompletion();
 		this.isLunar = IsLunar;
 

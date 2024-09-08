@@ -13,12 +13,13 @@ echo %ESC%[0;32m Done%ESC%[0;0m.
 
 :: Build the Visual Studio project
 echo | set /p dummyName=%ESC%[0;32m    Building%ESC%[0;0m solution...
-dotnet build ./Vitems/RoR2Mods.sln 1> nul || exit /b
+dotnet build ./Vitems/RoR2Mods.sln 1> nul
 echo %ESC%[0;32m Done%ESC%[0;0m.
 
 :: Copy over the DLL to R2ModMan
 echo | set /p dummyName=%ESC%[0;32m    Copying%ESC%[0;0m mod to R2ModMan...
-cp Vitems\Vitems\bin\Debug\netstandard2.1\Vitems.dll %appdata%\r2modmanPlus-local\RiskOfRain2\profiles\Default\BepInEx\plugins\Unknown-Vitems
+if not exist "%appdata%\r2modmanPlus-local\RiskOfRain2\profiles\Default\BepInEx\plugins\Unknown-Vitems" mkdir "%appdata%\r2modmanPlus-local\RiskOfRain2\profiles\Default\BepInEx\plugins\Unknown-Vitems"
+cp Vitems\Vitems\bin\Debug\netstandard2.1\Vitems.dll %appdata%\r2modmanPlus-local\RiskOfRain2\profiles\Default\BepInEx\plugins\Unknown-Vitems\Vitems.dll
 echo %ESC%[0;32m Done%ESC%[0;0m.
 
 :: Log end

@@ -13,6 +13,8 @@ Vitems (Vi's Items) is a mod for Risk of Rain 2, originally created by Violet.
 
 ## Contributing
 
+Vitems welcomes contributions, including bugfixes, balance changes, new items, and more. Follow the guide below to get things started.
+
 ### Getting the Project Locally
 
 First, clone the project onto your local machine:
